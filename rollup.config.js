@@ -1,16 +1,19 @@
 import commonjs from "@rollup/plugin-commonjs";
 import { terser } from "rollup-plugin-terser";
+import { nodeResolve } from "@rollup/plugin-node-resolve";
+import json from "@rollup/plugin-json";
+import nodePolyfills from "rollup-plugin-node-polyfills";
 
 function createConfig(format) {
   const dir = format === "module" ? "esm" : format;
   return {
-    input: require.resolve("autopublish-template"),
+    input: require.resolve("markdown-it"),
     output: {
       file: `${dir}/index.js`,
       sourcemap: true,
       format,
     },
-    plugins: [commonjs(), terser()],
+    plugins: [nodePolyfills(), json(), nodeResolve(), commonjs(), terser()],
   };
 }
 
