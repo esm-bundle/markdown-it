@@ -1,13 +1,14 @@
 devDependencies:
   '@rollup/plugin-commonjs': 18.0.0_rollup@2.44.0
+  '@rollup/plugin-json': 4.1.0_rollup@2.44.0
   '@rollup/plugin-node-resolve': 11.2.1_rollup@2.44.0
-  autopublish-template: 20.0.20
   chai: 4.3.4
   concurrently: 6.0.0
   husky: 6.0.0
   karma: 6.3.2
   karma-firefox-launcher: 2.1.0
   karma-jasmine: 4.0.1_karma@6.3.2
+  markdown-it: 12.0.4
   mocha: 8.3.2
   pinst: 2.1.6
   prettier: 2.2.1
@@ -15,6 +16,7 @@ devDependencies:
   release-it: 14.5.1
   release-it-plugin-esm-bundle: 2.1.0
   rollup: 2.44.0
+  rollup-plugin-node-polyfills: 0.2.1
   rollup-plugin-terser: 7.0.2_rollup@2.44.0
 lockfileVersion: 5.2
 packages:
@@ -191,6 +193,15 @@ packages:
       rollup: ^2.30.0
     resolution:
       integrity: sha512-fj92shhg8luw7XbA0HowAqz90oo7qtLGwqTKbyZ8pmOyH8ui5e+u0wPEgeHLH3djcVma6gUCUrjY6w5R2o1u6g==
+  /@rollup/plugin-json/4.1.0_rollup@2.44.0:
+    dependencies:
+      '@rollup/pluginutils': 3.1.0_rollup@2.44.0
+      rollup: 2.44.0
+    dev: true
+    peerDependencies:
+      rollup: ^1.20.0 || ^2.0.0
+    resolution:
+      integrity: sha512-yfLbTdNS6amI/2OpmbiBoW12vngr5NW2jCJVZSBEz+H5KfUJZ2M7sDjk0U6GOOdCWFVScShte29o9NezJ53TPw==
   /@rollup/plugin-node-resolve/11.2.1_rollup@2.44.0:
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@2.44.0
@@ -295,6 +306,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-vFHy/ezP5qI0rFgJ7aQnjDXwAMrG0KqqIH7tQG5PPv3BWBayOPIQNBjVc/P6hhdZfMx51REc6tfDNXHUio893g==
+  /@types/node/14.14.37:
+    dev: true
+    resolution:
+      integrity: sha512-XYmBiy+ohOR4Lh5jE379fV2IU+6Jn4g5qASinhitfyO71b/sCo6MKsMLF5tc7Zf2CE8hViVQyYSobJNke8OvUw==
   /@types/normalize-package-data/2.4.0:
     dev: true
     resolution:
@@ -305,7 +320,7 @@ packages:
       integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
   /@types/resolve/1.17.1:
     dependencies:
-      '@types/node': 14.14.31
+      '@types/node': 14.14.37
     dev: true
     resolution:
       integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==
@@ -427,10 +442,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-x57Zf380y48robyXkLzDZkdLS3k=
-  /autopublish-template/20.0.20:
-    dev: true
-    resolution:
-      integrity: sha512-5HHVg+HBuBE0KLPIb/Moca31u02qLE7kAXV7O/NIikxocVUlcNCoI2tALnih09h/FL/g1eyg4m6ykg7z3h9Jsg==
   /balanced-match/1.0.0:
     dev: true
     resolution:
@@ -1083,6 +1094,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-6WQhkyWiHQX0RGai9obtbOX13R0=
+  /entities/2.1.0:
+    dev: true
+    resolution:
+      integrity: sha512-hCx1oky9PFrJ611mf0ifBLBRW8lUUVRlFolb5gWRfIELabBlbp9xZvrqZLZAs+NxFnbfQoeGd8wDkygjg7U85w==
   /error-ex/1.3.2:
     dependencies:
       is-arrayish: 0.2.1
@@ -1117,6 +1132,10 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
+  /estree-walker/0.6.1:
+    dev: true
+    resolution:
+      integrity: sha512-SqmZANLWS0mnatqbSfRP5g8OXZC12Fgg1IwNtLsyHDzJizORW4khDfjPqJZsemPWBB2uqykUah5YpQ6epsqC/w==
   /estree-walker/1.0.1:
     dev: true
     resolution:
@@ -1919,6 +1938,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
+  /linkify-it/3.0.2:
+    dependencies:
+      uc.micro: 1.0.6
+    dev: true
+    resolution:
+      integrity: sha512-gDBO4aHNZS6coiZCKVhSNh43F9ioIL4JwRjLZPkoLIY4yZFwg264Y5lu2x6rb1Js42Gh6Yqm2f6L2AJcnkzinQ==
   /locate-path/5.0.0:
     dependencies:
       p-locate: 4.1.0
@@ -2008,6 +2033,21 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==
+  /markdown-it/12.0.4:
+    dependencies:
+      argparse: 2.0.1
+      entities: 2.1.0
+      linkify-it: 3.0.2
+      mdurl: 1.0.1
+      uc.micro: 1.0.6
+    dev: true
+    hasBin: true
+    resolution:
+      integrity: sha512-34RwOXZT8kyuOJy25oJNJoulO8L0bTHYWXcdZBYZqFnjIy3NgjeoM3FmPXIOFQ26/lSHYMr8oc62B6adxXcb3Q==
+  /mdurl/1.0.1:
+    dev: true
+    resolution:
+      integrity: sha1-/oWy7HWlkDfyrf7BAP1sYBdhFS4=
   /media-typer/0.3.0:
     dev: true
     engines:
@@ -2705,6 +2745,21 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==
+  /rollup-plugin-inject/3.0.2:
+    dependencies:
+      estree-walker: 0.6.1
+      magic-string: 0.25.7
+      rollup-pluginutils: 2.8.2
+    deprecated: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-inject.
+    dev: true
+    resolution:
+      integrity: sha512-ptg9PQwzs3orn4jkgXJ74bfs5vYz1NCZlSQMBUA0wKcGp5i5pA1AO3fOUEte8enhGUC+iapTCzEWw2jEFFUO/w==
+  /rollup-plugin-node-polyfills/0.2.1:
+    dependencies:
+      rollup-plugin-inject: 3.0.2
+    dev: true
+    resolution:
+      integrity: sha512-4kCrKPTJ6sK4/gLL/U5QzVT8cxJcofO0OU74tnB19F40cmuAKSzH5/siithxlofFEjwvw1YAhPmbvGNA6jEroA==
   /rollup-plugin-terser/7.0.2_rollup@2.44.0:
     dependencies:
       '@babel/code-frame': 7.12.13
@@ -2717,6 +2772,12 @@ packages:
       rollup: ^2.0.0
     resolution:
       integrity: sha512-w3iIaU4OxcF52UUXiZNsNeuXIMDvFrr+ZXK6bFZ0Q60qyVfq4uLptoS4bbq3paG3x216eQllFZX7zt6TIImguQ==
+  /rollup-pluginutils/2.8.2:
+    dependencies:
+      estree-walker: 0.6.1
+    dev: true
+    resolution:
+      integrity: sha512-EEp9NhnUkwY8aif6bxgovPHMoMoNr2FulJziTndpt5H9RdwC47GSGuII9XxpSdzVGM0GWrNPHV6ie1LTNJPaLQ==
   /rollup/2.44.0:
     dev: true
     engines:
@@ -3143,6 +3204,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-yo+miGzQx5gakzVK3QFfN0/L9uVhosXBBO7qmnk7c2iw1IhL212wfA3zbnI54B0obGwC/5NWub/iT9sReMx+Fw==
+  /uc.micro/1.0.6:
+    dev: true
+    resolution:
+      integrity: sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==
   /unique-string/2.0.0:
     dependencies:
       crypto-random-string: 2.0.0
@@ -3385,14 +3450,15 @@ packages:
       integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 specifiers:
   '@rollup/plugin-commonjs': 18.0.0
+  '@rollup/plugin-json': ^4.1.0
   '@rollup/plugin-node-resolve': 11.2.1
-  autopublish-template: 20.0.20
   chai: 4.3.4
   concurrently: 6.0.0
   husky: 6.0.0
   karma: 6.3.2
   karma-firefox-launcher: 2.1.0
   karma-jasmine: 4.0.1
+  markdown-it: ^12.0.4
   mocha: 8.3.2
   pinst: 2.1.6
   prettier: 2.2.1
@@ -3400,4 +3466,5 @@ specifiers:
   release-it: 14.5.1
   release-it-plugin-esm-bundle: 2.1.0
   rollup: 2.44.0
+  rollup-plugin-node-polyfills: ^0.2.1
   rollup-plugin-terser: 7.0.2
