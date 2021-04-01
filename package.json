@@ -31,6 +31,9 @@
   "bugs": {
     "url": "https://github.com/esm-bundle/markdown-it/issues"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "https://github.com/esm-bundle/markdown-it#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "18.0.0",
