@@ -1,6 +1,6 @@
 {
   "name": "@esm-bundle/markdown-it",
-  "version": "12.0.4",
+  "version": "12.0.5",
   "description": "ESM bundle for markdown-it",
   "main": "index.js",
   "module": "esm/index.js",
