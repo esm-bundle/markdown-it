@@ -11,7 +11,7 @@ specifiers:
   karma-firefox-launcher: 2.1.0
   karma-jasmine: 4.0.1
   markdown-it: 12.0.6
-  mocha: 8.3.2
+  mocha: 8.4.0
   pinst: 2.1.6
   prettier: 2.2.1
   pretty-quick: 3.1.0
@@ -32,7 +32,7 @@ devDependencies:
   karma-firefox-launcher: 2.1.0
   karma-jasmine: 4.0.1_karma@6.3.2
   markdown-it: 12.0.6
-  mocha: 8.3.2
+  mocha: 8.4.0
   pinst: 2.1.6
   prettier: 2.2.1
   pretty-quick: 3.1.0_prettier@2.2.1
@@ -1993,8 +1993,8 @@ packages:
     resolution: {integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==}
     dev: true
 
-  /mocha/8.3.2:
-    resolution: {integrity: sha512-UdmISwr/5w+uXLPKspgoV7/RXZwKRTiTjJ2/AC5ZiEztIoOYdfKb19+9jNmEInzx5pBsCyJQzarAxqIGBNYJhg==}
+  /mocha/8.4.0:
+    resolution: {integrity: sha512-hJaO0mwDXmZS4ghXsvPVriOhsxQ7ofcpQdm8dE+jISUOKopitvnXFQmpRR7jd2K6VBG6E26gU3IAbXXGIbu4sQ==}
     engines: {node: '>= 10.12.0'}
     hasBin: true
     dependencies:
