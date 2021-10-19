@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@rollup/plugin-commonjs': 21.0.0
   '@rollup/plugin-json': 4.1.0
-  '@rollup/plugin-node-resolve': 13.0.5
+  '@rollup/plugin-node-resolve': 13.0.6
   chai: 4.3.4
   concurrently: 6.3.0
   husky: 7.0.2
@@ -24,7 +24,7 @@ specifiers:
 devDependencies:
   '@rollup/plugin-commonjs': 21.0.0_rollup@2.46.0
   '@rollup/plugin-json': 4.1.0_rollup@2.46.0
-  '@rollup/plugin-node-resolve': 13.0.5_rollup@2.46.0
+  '@rollup/plugin-node-resolve': 13.0.6_rollup@2.46.0
   chai: 4.3.4
   concurrently: 6.3.0
   husky: 7.0.2
@@ -221,8 +221,8 @@ packages:
       rollup: 2.46.0
     dev: true
 
-  /@rollup/plugin-node-resolve/13.0.5_rollup@2.46.0:
-    resolution: {integrity: sha512-mVaw6uxtvuGx/XCI4qBQXsDZJUfyx5vp39iE0J/7Hd6wDhEbjHr6aES7Nr9yWbuE0BY+oKp6N7Bq6jX5NCGNmQ==}
+  /@rollup/plugin-node-resolve/13.0.6_rollup@2.46.0:
+    resolution: {integrity: sha512-sFsPDMPd4gMqnh2gS0uIxELnoRUp5kBl5knxD2EO0778G1oOJv4G1vyT2cpWz75OU2jDVcXhjVUuTAczGyFNKA==}
     engines: {node: '>= 10.0.0'}
     peerDependencies:
       rollup: ^2.42.0
@@ -313,10 +313,6 @@ packages:
 
   /@types/minimatch/3.0.3:
     resolution: {integrity: sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==}
-    dev: true
-
-  /@types/node/14.14.31:
-    resolution: {integrity: sha512-vFHy/ezP5qI0rFgJ7aQnjDXwAMrG0KqqIH7tQG5PPv3BWBayOPIQNBjVc/P6hhdZfMx51REc6tfDNXHUio893g==}
     dev: true
 
   /@types/node/14.14.37:
@@ -1745,7 +1741,7 @@ packages:
     resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 14.14.31
+      '@types/node': 14.14.37
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
