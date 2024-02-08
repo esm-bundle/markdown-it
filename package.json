@@ -46,7 +46,7 @@
     "karma-firefox-launcher": "2.1.2",
     "karma-jasmine": "5.1.0",
     "markdown-it": "14.0.0",
-    "mocha": "10.2.0",
+    "mocha": "10.3.0",
     "pinst": "3.0.0",
     "prettier": "3.2.5",
     "pretty-quick": "4.0.0",
