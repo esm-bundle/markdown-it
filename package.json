@@ -48,7 +48,7 @@
     "markdown-it": "14.1.0",
     "mocha": "10.8.2",
     "pinst": "3.0.0",
-    "prettier": "3.5.0",
+    "prettier": "3.5.1",
     "pretty-quick": "4.0.0",
     "release-it": "18.1.2",
     "release-it-plugin-esm-bundle": "3.0.0",
