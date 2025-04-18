@@ -14,7 +14,7 @@ specifiers:
   mocha: 10.8.2
   pinst: 3.0.0
   prettier: 3.5.3
-  pretty-quick: 4.1.0
+  pretty-quick: 4.1.1
   release-it: 19.0.1
   release-it-plugin-esm-bundle: 3.0.0
   rollup: 2.46.0
@@ -35,7 +35,7 @@ devDependencies:
   mocha: 10.8.2
   pinst: 3.0.0
   prettier: 3.5.3
-  pretty-quick: 4.1.0_prettier@3.5.3
+  pretty-quick: 4.1.1_prettier@3.5.3
   release-it: 19.0.1
   release-it-plugin-esm-bundle: 3.0.0_release-it@19.0.1
   rollup: 2.46.0
@@ -2220,8 +2220,8 @@ packages:
     hasBin: true
     dev: true
 
-  /pretty-quick/4.1.0_prettier@3.5.3:
-    resolution: {integrity: sha512-5v7Y4pQqEPQYZh3MQEOGvHbRCtAD47wI3nRJWyBCfBVkbONBTIotgAsTD6VWTAAfX1JJgRkYu7l/4C49SbuP+A==}
+  /pretty-quick/4.1.1_prettier@3.5.3:
+    resolution: {integrity: sha512-9Ud0l/CspNTmyIdYac9X7Inb3o8fuUsw+1zJFvCGn+at0t1UwUcUdo2RSZ41gcmfLv1fxgWQxWEfItR7CBwugg==}
     engines: {node: '>=14'}
     hasBin: true
     peerDependencies:
